@@ -3,7 +3,23 @@
 	"package": "com.github.ztymilk.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"LivingEntityAccessor",
+		"LivingEntityDamageMixin",
+		"LivingEntityDeathMixin",
+		"LivingEntitySwingMixin",
+		"PlayerAttackComboMixin",
+		"PlayerRollMixin",
+		"PlayerSoulMixin",
+		"ServerPlayerRollMixin"
+	],
+	"client": [
+		"client.AttackHumanoidModelMixin",
+		"client.AttackItemInHandRendererMixin",
+		"client.AvatarRenderStateMixin",
+		"client.AvatarRendererMixin",
+		"client.CameraRollMixin",
+		"client.GameRendererFovMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

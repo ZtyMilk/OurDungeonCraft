@@ -1,0 +1,20 @@
+{
+  "key.ourdungeoncraft.roll": "战术翻滚",
+  "category.ourdungeoncraft.movement": "地下城工艺 (OurDungeonCraft)",
+  "itemGroup.ourdungeoncraft.weapons": "地下城武器 (OurDungeonCraft)",
+  "tooltip.ourdungeoncraft.combo": "连击: %d 段攻击",
+  "tooltip.ourdungeoncraft.reach": "%s 攻击距离",
+  "item.ourdungeoncraft.sword": "地下城剑",
+  "item.ourdungeoncraft.double_axe": "双刃斧",
+  "item.ourdungeoncraft.great_hammer": "大锤",
+  "item.ourdungeoncraft.claymore": "阔剑",
+  "item.ourdungeoncraft.daggers": "匕首",
+  "item.ourdungeoncraft.gauntlets": "拳套",
+  "item.ourdungeoncraft.spear": "长矛",
+  "item.ourdungeoncraft.mace": "钉头锤",
+  "item.ourdungeoncraft.sickles": "双镰刀",
+  "item.ourdungeoncraft.glaive": "长戟",
+  "enchantment.ourdungeoncraft.roll_master": "翻滚大师",
+  "enchantment.ourdungeoncraft.roll_master.desc": "增加最大翻滚充能次数（上限4次）。",
+  "entity.ourdungeoncraft.soul_orb": "灵魂"
+}

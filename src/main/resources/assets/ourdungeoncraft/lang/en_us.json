@@ -1,0 +1,20 @@
+{
+  "key.ourdungeoncraft.roll": "Dodge Roll",
+  "category.ourdungeoncraft.movement": "OurDungeonCraft",
+  "itemGroup.ourdungeoncraft.weapons": "OurDungeonCraft: Weapons",
+  "tooltip.ourdungeoncraft.combo": "Combo: %d-Hit Sequence",
+  "tooltip.ourdungeoncraft.reach": "%s Attack Reach",
+  "item.ourdungeoncraft.sword": "Sword",
+  "item.ourdungeoncraft.double_axe": "Double Axe",
+  "item.ourdungeoncraft.great_hammer": "Great Hammer",
+  "item.ourdungeoncraft.claymore": "Claymore",
+  "item.ourdungeoncraft.daggers": "Daggers",
+  "item.ourdungeoncraft.gauntlets": "Gauntlets",
+  "item.ourdungeoncraft.spear": "Spear",
+  "item.ourdungeoncraft.mace": "Mace",
+  "item.ourdungeoncraft.sickles": "Sickles",
+  "item.ourdungeoncraft.glaive": "Glaive",
+  "enchantment.ourdungeoncraft.roll_master": "Roll Master",
+  "enchantment.ourdungeoncraft.roll_master.desc": "Increases maximum roll charges (capped at 4).",
+  "entity.ourdungeoncraft.soul_orb": "Soul Orb"
+}

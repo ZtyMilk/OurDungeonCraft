@@ -7,24 +7,32 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.github.ztymilk.command.SetSoulCommand;
+import com.github.ztymilk.enchantment.ModEnchantments;
+import com.github.ztymilk.entity.ModEntities;
+import com.github.ztymilk.item.ModCreativeModeTabs;
+import com.github.ztymilk.item.ModItems;
+import com.github.ztymilk.network.ModNetworking;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+
 public class OurDungeonCraft implements ModInitializer {
-	public static final String MOD_ID = "ourdungeoncraft";
+    public static final String MOD_ID = "ourdungeoncraft";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    @Override
+    public void onInitialize() {
+        ModNetworking.init();
+        ModEntities.init();
+        ModItems.init();
+        ModCreativeModeTabs.init();
+        ModEnchantments.init();
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+            SetSoulCommand.register(dispatcher);
+        });
+    }
 
-		LOGGER.info("Hello Fabric world!");
-	}
-
-	public static Identifier id(String path) {
-		return Identifier.fromNamespaceAndPath(MOD_ID, path);
-	}
+    public static Identifier id(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
+    }
 }
